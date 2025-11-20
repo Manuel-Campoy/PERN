@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const Home = ({user, error}) => {
     return( 
@@ -14,8 +15,8 @@ const Home = ({user, error}) => {
                 <div>
                     <h2 className="text-2xl font-bold mb-6 text-gray-800">Please log in or register.</h2>
                     <div className='flex flex-col gap-y-4'>
-                        <Link to="/login" className="w-full text-white bg-blue-500 p-3 rounden-md hover:bg-blue-600 font-medium">Login</Link>
-                        <Link to="/register" className="w-full text-gray-800 bg-gray-200 p-3 rounden-md hover:bg-gray-300 font-medium">Register</Link>
+                        <Link to="/login" className="w-full text-white bg-blue-500 p-3 rounded-md hover:bg-blue-600 font-medium">Login</Link>
+                        <Link to="/register" className="w-full text-gray-800 bg-gray-200 p-3 rounded-md hover:bg-gray-300 font-medium">Register</Link>
                     </div>
                 </div>
             )}

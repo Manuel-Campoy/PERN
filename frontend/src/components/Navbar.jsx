@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Navbar = ({user, setUser}) => {
@@ -17,7 +17,7 @@ const Navbar = ({user, setUser}) => {
                 <Link to="/" className="font-bold">PERN Auth</Link>
             <div>
                 {user ? (
-                    <button oncClick={handleLogout} className='bg-red-500 px-3 py-1 rounded'>Logout</button>
+                    <button onClick={handleLogout} className='bg-red-500 px-3 py-1 rounded'>Logout</button>
                 ) : (
                     <>
                     <Link to='/login' className='mx-2'>Login</Link>
